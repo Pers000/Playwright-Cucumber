@@ -3,7 +3,7 @@ import { LaunchOptions, chromium, firefox, webkit } from "playwright-core";
 //This will list the available browser for testing
 //You can also change whether you want it to be executed in a headless mode or not
 const options: LaunchOptions = {
-    headless: !true
+    headless: true
 }
 export const invokeBrowser = () => {
     const browserType = process.env.npm_config_BROWSER || "chrome";
